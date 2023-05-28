@@ -1,28 +1,22 @@
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+/* Remove default margin and padding and set all fonts to inherit */
+* {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role='list'], ol[role='list'] {
   list-style: none;
+}
+
+html, body {
+    height: 100%;
 }
 
 /* Set core root defaults */
@@ -32,7 +26,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizespeed;
   line-height: 1.5;
 }
@@ -43,17 +36,13 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img, picture, svg {
   max-width: 100%;
   display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
   font: inherit;
 }
 

@@ -585,6 +585,12 @@ input:where([type="text"], [type="email"]) {
     }
 }
 
+@media (min-width: 107.5em) {
+    .hero__image::before {
+        margin-right: -3.5rem;
+    }
+}
+
 /* Sales points */
 
 .sales-points__blob {
@@ -606,8 +612,14 @@ input:where([type="text"], [type="email"]) {
         zoom: 70%;
         z-index: -1;
         left: -500px;
-        top: 42%;
+        top: 47%;
         width: 100px;
+    }
+}
+
+@media (min-width: 107.5em) {
+    .sales-points__blob::before {
+        left: -750px;
     }
 }
 

@@ -559,7 +559,6 @@ input:where([type="text"], [type="email"]) {
 
 @media (min-width: 47em) {
     .hero__image {
-        /* position: relative; */
         order: -1;
     }
 }
